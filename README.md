@@ -12,6 +12,6 @@ To run this project you must first have installed mongodb and get it running, yo
 3. Run `npm start` command to serve the front end or `npm run dev` for hot module reloading during development
 
 ### SERVER
-1.Run `npm i` command
-2.Create a new file named `.env` and the enviroments settings, following the instructions of the example file `example.env`
+1. Run `npm i` command
+2. Create a new file named `.env` and the enviroments settings, following the instructions of the example file `example.env`
 3. Run `npm start` command to start the server or `npm run dev` to use nodemon for file reloading during development
