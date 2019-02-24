@@ -4,7 +4,7 @@
 To run this project you must first have installed mongodb and get it running, you can follow the instructions for your operating system [here](https://docs.mongodb.com/manual/installation/)
 
 
-Steps to run this project:
+## Steps to run this project:
 
 ###CLIENT
 1. Run `npm i` command
