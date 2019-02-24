@@ -1,0 +1,17 @@
+.generic-container {
+    display: grid;
+    grid-template-areas:
+        'navb navb navb navb navb'
+        'cont cont cont cont cont'
+    ;
+    grid-template-rows: 5% auto;
+    min-height: 100vh;
+}
+
+.generic-navbar {
+    grid-area: navb;
+}
+
+.generic-content {
+    grid-area: cont;
+}

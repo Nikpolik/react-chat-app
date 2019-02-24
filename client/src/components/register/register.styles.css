@@ -1,0 +1,83 @@
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #99bcd1, #a9c4d5, #b9ccd9, #c8d4dd, #d6dce1);
+}
+
+.register-logo {
+    height: 35px;
+}
+
+.register-header {
+    text-align: center;
+    width: 100%;
+    color: var(--primary-color-bold);
+    font-weight: bold;
+    font-size: 35px
+}
+
+.register-text {
+    text-align: center;
+    width: 35%;
+    min-width: 280px;
+    color: var(--primary-color);
+}
+
+.register-box {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    min-width: 300px;
+    max-width: 900px;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.register-input {
+    position: relative;
+    display: inline-block;
+    margin: 25px 10px;
+    width: 60%;
+    min-width: 280px;
+}
+
+#username, #password, #confirmPassword, #firstName, #lastName, #email {
+    width: 100%;
+    font-size: 20px;
+}
+
+.register-redirect {
+    text-align: center;
+    width: 60%;
+    min-width: 280px
+}
+
+.register-input-group {
+    position: relative;
+    display: flex;
+    margin: 25px 10px;
+    width: 60%;
+    min-width: 280px;
+}
+
+.register-input-group-item {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+}
+
+.register-button {
+    width: 60%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    min-width: 280px;
+}

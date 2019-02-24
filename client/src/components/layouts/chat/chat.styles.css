@@ -1,0 +1,26 @@
+.chat-container {
+    display: grid;
+    grid-template-areas: 
+        'navb navb navb navb navb'
+        'side chat chat chat chat'
+    ;
+    grid-template-rows: 5% 95%;
+    grid-template-columns: 15% 85%;
+    height: 100vh;
+}
+
+.navbar {
+    grid-area: navb;
+}
+
+.content {
+    grid-area: chat;
+}
+
+.sidebar {
+    grid-area: side;
+}
+
+.footer {
+    grid-area: foot;
+}

@@ -1,0 +1,52 @@
+.sidebar-container {
+    border: 1px solid var(--primary-color);
+    border-top: initial;
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar-item {
+    border-bottom: 0.7px solid var(--primary-color);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    min-height: 50px;
+    padding-left: 2.5%;
+}
+
+.sidebar-item.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-item:hover {
+    background-color: #cecece8c;
+    cursor: pointer;
+}
+
+.sidebar-conversation {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.sidebar-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0.5em;
+}
+
+.sidebar-LastMessage {
+    margin-left: 0.5em;
+    color: #a6a6a6;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.sidebar-item-active {
+    background-color: #cecece8c;
+}

@@ -1,0 +1,88 @@
+.speech-bubble {
+	position: relative;
+	background: var(--secondary-color);
+    border-radius: .4em;
+    margin-left: 0.625em;
+    max-width: 20%;
+    min-width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.speech-bubble-left:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 0.625em solid transparent;
+	border-right-color: var(--secondary-color);
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -0.312em;
+	margin-left: -0.625em;
+}
+
+.speech-bubble-right:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 0.625em solid transparent;
+	border-left-color: var(--primary-color);
+	border-right: 0;
+	border-bottom: 0;
+	margin-top: -0.312em;
+	margin-right: -0.625em;
+}
+
+.speech-bubble-right {
+    float: right;
+    margin-right: 0.625em;
+    background: var(--primary-color);
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.message-left-container {
+    /* {{ width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-start' }} */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+.message-right-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 10px;
+}

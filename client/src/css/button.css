@@ -1,0 +1,32 @@
+
+button {
+    border: unset;
+}
+
+button.button {
+    text-decoration: none;
+    color: white;
+    background: var(--primary-color);
+    border-radius: 3px;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 0.4s; /* Safari */
+    transition: width 2s, height 2s, transform 0.4s;    cursor: pointer;
+}
+
+button.button:active {
+    transform: translateY(4px);;
+    -webkit-transform: translateY(4px);
+}
+
+a.button {
+    text-decoration: none;
+    color: white;
+    background: var(--primary-color);
+    border-radius: 3px;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 0.4s; /* Safari */
+    transition: width 2s, height 2s, transform 0.4s;    cursor: pointer;
+}
+
+a.button:active {
+    transform: translateY(4px);;
+    -webkit-transform: translateY(4px);
+}
