@@ -4,13 +4,14 @@
     border-radius: .4em;
     margin-left: 0.625em;
     max-width: 20%;
-    min-width: 100px;
+    min-width: 50px;
     display: flex;
     flex-wrap: wrap;
     color: white;
     font-size: 18px;
     padding: 10px;
     margin-top: 10px;
+    z-index: -1;
 }
 
 .speech-bubble-left:after {
@@ -25,7 +26,8 @@
 	border-left: 0;
 	border-bottom: 0;
 	margin-top: -0.312em;
-	margin-left: -0.625em;
+    margin-left: -0.625em;
+    z-index: -1;
 }
 
 .speech-bubble-right:after {
@@ -41,6 +43,7 @@
 	border-bottom: 0;
 	margin-top: -0.312em;
 	margin-right: -0.625em;
+    z-index: -1;
 }
 
 .speech-bubble-right {
@@ -77,6 +80,7 @@ html[xmlns] .clearfix {
     flex-direction: row;
     justify-content: flex-start;
     margin-left: 10px;
+    z-index: -1;
 }
 
 .message-right-container {
@@ -85,4 +89,5 @@ html[xmlns] .clearfix {
     flex-direction: row;
     justify-content: flex-end;
     margin-right: 10px;
+    z-index: -1;
 }

@@ -1,7 +1,8 @@
 client/node_modules
-/client/static.json
-/client/app.json
-/client/build
+client/static.json
+client/app.json
+client/build
+client/.env.json
 server/node_modules
 server/build
-/server/.env
+server/.env

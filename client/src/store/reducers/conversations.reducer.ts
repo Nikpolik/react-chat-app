@@ -1,5 +1,5 @@
 import { Action } from 'redux';
-import { SAVE_CONVERSATIONS, ADD_CONVERSATION, SAVE_SELECTION, ADD_MESSAGE, LEFT_CONVERSATION } from 'src/constants';
+import { SAVE_CONVERSATIONS, ADD_CONVERSATION, SAVE_SELECTION, ADD_MESSAGE, LEFT_CONVERSATION, LOGIN_USER } from 'src/constants';
 import { SaveConversationsAction, AddConversationAction, SaveSelectionAction, AddMessageAction, LeftConversationAction } from '../actions/conversations';
 
 export interface ConversationsState {
@@ -35,6 +35,10 @@ export interface Message {
 
 export default function conversasionsReducer(state: ConversationsState = initialState, action: Action): ConversationsState {
     switch(action.type) {
+        case LOGIN_USER:
+            return {
+                ...initialState
+            }
         case SAVE_CONVERSATIONS:
             const { data: conversationsList } = action as SaveConversationsAction;
             const conversations = {};

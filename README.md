@@ -2,6 +2,8 @@
 
 Currently running at http://react-chat-front.herokuapp.com/
 
+test login account **username** : `test` , **password** : `12345`
+
 <hr/>
 
 ## Prerequisites

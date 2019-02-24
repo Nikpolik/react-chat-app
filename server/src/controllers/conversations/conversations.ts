@@ -29,7 +29,7 @@ const controller: Method[] = [
         action: async (ws, req, data) => {
             const { user, conversationId } = data;
             let conversation = await loadConversation(user.id, conversationId)
-            await conversation.getRelations();
+            await conversation.getParticipants();
             let messages = await loadMessages(user.id, conversation, 0, 0);
             ws.sendAction({
                 type: SAVE_SELECTION, data: {
@@ -45,7 +45,7 @@ const controller: Method[] = [
             const { user, conversationId, text } = data;
             let conversation = await loadConversation(user.id, conversationId);
             let message = await sendMessage(user.id, conversation._id, text);
-            let participants = await conversation.getRelations();
+            let participants = await conversation.getParticipants();
             ws.broadcast(participants.filter((participant) => user._id.toString() !== participant._id.toString()).map((user) => user.id), { type: ADD_NOTIFICATION, data: { title: 'New Message', text: `You recieved a new message from ${user.username}!`, type: 'success' } });
             ws.broadcast(participants.map((participant) => participant.id), { type: ADD_MESSAGE, data: message.toObject() });
         }

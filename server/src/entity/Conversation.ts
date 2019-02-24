@@ -14,7 +14,7 @@ export interface ConversationModel extends Document {
     createdAt: Date;
     lastMessageTimestamp: Date;
     lastMessage: MessageModel;
-    getRelations: () => UserModel[];
+    getParticipants: () => UserModel[];
     updateWithLastMessage: () => ConversationModel;
 }
 
@@ -57,7 +57,7 @@ async function updateWithLastMessage(this: ConversationModel) {
     }
 }
 
-async function getRelations(this: ConversationModel) {
+async function getParticipants(this: ConversationModel) {
     try {
         await this.populate({ path: 'participants', select: '_id username' }).execPopulate();
         return this.participants;
@@ -66,6 +66,6 @@ async function getRelations(this: ConversationModel) {
     }
 }
 
-ConversationSchema.methods.getRelations = getRelations;
+ConversationSchema.methods.getParticipants = getParticipants;
 ConversationSchema.methods.updateWithLastMessage = updateWithLastMessage;
 export const Conversation = model<ConversationModel>('Chat', ConversationSchema);
